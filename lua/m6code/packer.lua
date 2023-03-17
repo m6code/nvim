@@ -19,13 +19,16 @@ return require('packer').startup(function(use)
 		'rose-pine/neovim',
 		as = 'rose-pine',
 		config = function()
-			-- vim.cmd('colorscheme rose-pine') -- for default theme
-			vim.cmd('colorscheme rose-pine-moon') -- for moon theme
-			-- vim.cmd('colorscheme rose-pine-dawn') -- for dawn theme
-
+			vim.cmd('colorscheme rose-pine') -- for default theme
+			-- vim.cmd('colorscheme rose-pine-moon') -- for moon theme
+			-- vim.cmd('colorscheme rose-pine-dawn') -- for dawn theme 
 
 		end
 	})
+
+	-- MORE COLOR SCHEME
+	--	use('shaunsingh/nord.nvim')
+	use ('marko-cerovac/material.nvim')
 
 	-- INSTALL Tree-sitter (Highlighter)
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
