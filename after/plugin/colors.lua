@@ -1,4 +1,4 @@
-function ColorMyPencils(color)
+function MyPen(color)
 	color = color or "material"
 	vim.cmd.colorscheme(color)
 	-- Set a transparent background
@@ -6,4 +6,4 @@ function ColorMyPencils(color)
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 end
 
-ColorMyPencils()
+MyPen()
