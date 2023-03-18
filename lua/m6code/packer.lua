@@ -1,7 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
-vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
 	-- Packer can manage itself
@@ -19,7 +19,7 @@ return require('packer').startup(function(use)
 		'rose-pine/neovim',
 		as = 'rose-pine',
 		config = function()
-			vim.cmd('colorscheme rose-pine') -- for default theme
+			-- vim.cmd('colorscheme rose-pine') -- for default theme
 			-- vim.cmd('colorscheme rose-pine-moon') -- for moon theme
 			-- vim.cmd('colorscheme rose-pine-dawn') -- for dawn theme 
 
@@ -29,6 +29,9 @@ return require('packer').startup(function(use)
 	-- MORE COLOR SCHEME
 	--	use('shaunsingh/nord.nvim')
 	use ('marko-cerovac/material.nvim')
+    use ('joshdick/onedark.vim') -- Theme inspired by Atom
+    use ('itchyny/lightline.vim') -- Fancier statusline
+
 
 	-- INSTALL Tree-sitter (Highlighter)
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -59,5 +62,7 @@ return require('packer').startup(function(use)
 		}
 	}
 	-- do `:so` and `:PackerSync`
+    use('mg979/vim-visual-multi')
+    use('mattn/emmet-vim') -- emmet
 end)
 
