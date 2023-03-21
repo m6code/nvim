@@ -5,17 +5,23 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 
+-- MY REMAPSS (m6code)
 -- SAVING FILES ---
 -- Remap :w write to file command to Ctrl+s to save file in normal mode
 vim.keymap.set("n", "<C-s>", vim.cmd.w)
 -- Remap :w write to file command to Ctrl+s to save file in normal mode
 vim.keymap.set("i", "<C-s>", vim.cmd.w)
 
+-- NAVIGATING SPLITS --
+-- nnoremap <C-J> <C-W><C-J>
+-- nnoremap <C-K> <C-W><C-K>
+-- nnoremap <C-L> <C-W><C-L>
+-- nnoremap <C-H> <C-W><C-H>
 
 
 
-vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+-- vim.g.mapleader = " "
+-- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
@@ -26,12 +32,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
-vim.keymap.set("n", "<leader>vwm", function()
-    require("vim-with-me").StartVimWithMe()
-end)
-vim.keymap.set("n", "<leader>svwm", function()
-    require("vim-with-me").StopVimWithMe()
-end)
+-- vim.keymap.set("n", "<leader>vwm", function()
+--    require("vim-with-me").StartVimWithMe()
+-- end)
+-- vim.keymap.set("n", "<leader>svwm", function()
+--    require("vim-with-me").StopVimWithMe()
+-- end)
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
