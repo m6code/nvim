@@ -22,7 +22,8 @@ return require('packer').startup(function(use)
 			-- vim.cmd('colorscheme rose-pine') -- for default theme
 			-- vim.cmd('colorscheme rose-pine-moon') -- for moon theme
 			-- vim.cmd('colorscheme rose-pine-dawn') -- for dawn theme 
-            vim.cmd('colorscheme onedark')
+            -- vim.cmd('colorscheme onedark')
+            vim.cmd('colorscheme tokyonight-night')
 
 		end
 	})
@@ -65,5 +66,10 @@ return require('packer').startup(function(use)
 	-- do `:so` and `:PackerSync`
     use('mg979/vim-visual-multi')
     use('mattn/emmet-vim') -- emmet
+    use('folke/tokyonight.nvim')
+    -- Lua
+    -- vim.cmd[[colorscheme tokyonight]]
+
 end)
+
 
