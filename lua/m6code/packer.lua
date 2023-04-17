@@ -28,6 +28,12 @@ return require('packer').startup(function(use)
 		end
 	})
 
+    use(
+        {
+            'catppuccin/nvim',
+            as = 'catppuccin'
+    })
+
 	-- MORE COLOR SCHEME
 	--	use('shaunsingh/nord.nvim')
 	use ('marko-cerovac/material.nvim')
@@ -66,7 +72,8 @@ return require('packer').startup(function(use)
 	-- do `:so` and `:PackerSync`
     use('mg979/vim-visual-multi')
     use('mattn/emmet-vim') -- emmet
-    use('folke/tokyonight.nvim')
+    use('folke/tokyonight.nvim') -- tokyonight theme 
+    -- use() -- Catppuccin theme 
     -- Lua
     -- vim.cmd[[colorscheme tokyonight]]
 
