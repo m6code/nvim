@@ -24,7 +24,8 @@ return require('packer').startup(function(use)
 			-- vim.cmd('colorscheme rose-pine-moon') -- for moon theme
 			-- vim.cmd('colorscheme rose-pine-dawn') -- for dawn theme 
             -- vim.cmd('colorscheme onedark')
-            vim.cmd('colorscheme onedark')
+            -- vim.cmd('colorscheme onedark')
+            vim.cmd('colorscheme  catppuccin-macchiato')
 
 		end
 	})
