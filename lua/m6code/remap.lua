@@ -12,6 +12,12 @@ vim.keymap.set("n", "<C-s>", vim.cmd.w)
 -- Remap :w write to file command to Ctrl+s to save file in normal mode
 vim.keymap.set("i", "<C-s>", vim.cmd.w)
 
+-- Remap: Auto Format File 
+-- gg: goto the start of file
+-- V: enter visual mode 
+-- G: goto end of line
+vim.keymap.set({"n", "v"}, "<leader>fm", [[ggVG=]])
+
 -- NAVIGATING SPLITS --
 -- nnoremap <C-J> <C-W><C-J>
 -- nnoremap <C-K> <C-W><C-K>
