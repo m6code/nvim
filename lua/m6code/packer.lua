@@ -45,7 +45,7 @@ return require('packer').startup(function(use)
 
 	-- INSTALL Tree-sitter (Highlighter)
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-	use('theprimeagen/harpoon')
+	-- use('theprimeagen/harpoon')
 	use('mbbill/undotree')
 	use('tpope/vim-fugitive')
 
