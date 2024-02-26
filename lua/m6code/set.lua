@@ -31,5 +31,5 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-set clipboard=unnamedplus
+-- set clipboard=unnamedplus
 -- vim.api.nvim_set_option("clipboard", "unnamed")
